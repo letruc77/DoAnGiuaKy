@@ -1,0 +1,141 @@
+@model WebApplication8.Models.WebShop.ImportStock
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+   
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+    .input-customize {
+    height:25px;
+    }
+</style>
+
+<h2>Create</h2>
+<form asp-action="Create">
+    <div class="col-sm-4">
+        <div class="form-horizontal">
+            <h4>Import Stock</h4>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label for="IdStock" class="col-md-2 control-label">Stock</label>
+                <div class="col-md-10">
+                    <select asp-for="IdStock" class="form-control">
+                        <option value="1">Kho 1</option>
+                    </select>
+                    <span asp-validation-for="IdStock" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Discount" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Discount" class="form-control" value="0" />
+                    <span asp-validation-for="Discount" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lack" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Lack" class="form-control" value="0" />
+                    <span asp-validation-for="Lack" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Payed" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Payed" class="form-control" value="0" />
+                    <span asp-validation-for="Payed" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Notes" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <textarea asp-for="Notes" class="form-control"></textarea>
+                    <span asp-validation-for="Notes" class="text-danger" />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="PaymentMt" class="col-md-2 control-label">Payment Method</label>
+                <div class="col-md-10" style="margin-top:10px">
+                    <input type="radio"  asp-for="PaymentMt" checked value="1" /> Received &nbsp; &nbsp; &nbsp;
+                    <input type="radio"  asp-for="PaymentMt" value="2" /> Card
+                    <span asp-validation-for="PaymentMt" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <select asp-for="Status" class="form-control">
+                        <option value="1">Active</option>
+                        <option value="0">InActive</option>
+                    </select>
+                    <span asp-validation-for="Status" class="text-danger" />
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="col-sm-8">
+        <h4>List Products</h4>
+        <hr />
+        <div class="col-sm-12">
+            <div id="imaginary_container">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" data-urlsearch="@Url.RouteUrl(new {controller="Products",action="SearchProducts",area="Admin" })" id="search-product" placeholder="Search">
+                    <ul class="typeahead dropdown-menu" id="menu-typesearch" style="top: 34px; left: 0px;display:none"></ul>
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-12" id="content-product-search" style="border-bottom:1px solid black;">
+                <input type="hidden" id="index-ele" value="0" />
+            </div>
+            <div class="row">
+                <div class="col-sm-12" id="show-total" style="display:none">
+                    <div class="col-sm-3 col-sm-offset-9">
+                        <input type="hidden" id="total-sum-input" name="total" value="0" />
+                        <span><b>Total :&nbsp;</b></span><span id="sum-total"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="col-sm-12">
+    <a asp-action="Index" class="" style="color:black">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+<script src="~/Scripts/TypeHeadAjax/bootstrap-typeahead.js"></script>
+<script src="~/Scripts/set_up_importstock.js"></script>
+<script src="~/Scripts/NumberJS/numeral.min.js"></script>
+<script type="text/javascript">
+</script>
+}

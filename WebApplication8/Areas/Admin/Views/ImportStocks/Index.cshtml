@@ -1,0 +1,127 @@
+@model IEnumerable<WebApplication8.Models.WebShop.ImportStock>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Management Importing</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success btn-lg">Create New <i class="fa fa-plus icon-white"></i></a>
+
+</p>
+@using (Html.BeginForm())
+{
+    <table class="table table-bordered" id="domainTable" style="font-size:smaller">
+        <thead>
+            <tr>
+                <th>
+                    <input type="checkbox" id="check-all-header" />
+                </th>
+                <th>
+                    Create Date
+                </th>
+                <th>
+                    Discount
+                </th>
+                <th>
+                    Stock
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lack)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Notes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Payed)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PaymentMt)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Total)
+                </th>
+                <th>
+                    User Create
+                </th>
+                <th>
+                    Action
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><input type="checkbox" name="ids" value="@item.ID" /></td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreateDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Discount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdStock)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Lack)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Notes)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Payed)
+                    </td>
+                    <td>
+                        @if (item.PaymentMt == 1)
+                        {
+                            @Html.Raw("Received")
+
+                        }
+                        else
+                        { @Html.Raw("Card")}
+                    </td>
+                    <td>
+
+                        @if (item.Status == 1)
+                        {
+                            @Html.Raw("Active")
+                        }
+                        else
+                        {
+                            @Html.Raw("InActive")
+                        }
+                    </td>
+                    <td>
+                        @Html.FormatValue(item.Total, "{0:N}")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserInit)
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button class="btn btn-lg btn-danger" type="button" onclick="form.action = '@Url.RouteUrl(new {controller="/",area="" })Admin/ImportStocks/DeleteSelected'" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item item" data-message="Are you sure you want to delete selected item ?">
+        Delete Selected
+        <i class="glyphicon glyphicon-trash"></i>
+    </button>
+}
+@{@await Html.PartialAsync("_ModelPopup"); }
+@section scripts{
+    <script src="~/Scripts/LoadDataTable.js"></script>
+    <script src="~/Scripts/ModelPopup.js"></script>
+    <script src="~/Scripts/CheckAll.js"></script>
+}

@@ -1,0 +1,217 @@
+﻿@model WebApplication8.Models.WebShop.Order
+@{ 
+    var index = 0;
+}
+
+
+<style>
+    .stylish-input-group .input-group-addon {
+        background: white !important;
+    }
+
+    .stylish-input-group .form-control {
+        border-right: 0;
+        box-shadow: 0 0 0;
+        border-color: #ccc;
+    }
+
+    .stylish-input-group button {
+        border: 0;
+        background: transparent;
+    }
+
+    .input-customize {
+        height: 25px;
+    }
+    .total-cus {
+     float:right
+    }
+</style>
+<h4>Order Information</h4>
+<hr />
+<div class="form-horizontal">
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Customer Name</label>
+        <div class="col-md-10">
+            @Model.Customer.Fullname
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Order Date</label>
+        <div class="col-md-10">
+            @Html.FormatValue(Model.OrderDate, "{0:yyyy-MM-dd}")
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Phone</label>
+        <div class="col-md-10">
+            @Model.Phone
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Required Date</label>
+        <div class="col-md-10">
+            @Html.FormatValue(Model.RequireDate, "{0:yyyy-MM-dd}")
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Receiver Name</label>
+        <div class="col-md-10">
+            @Model.Receiver
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Address</label>
+        <div class="col-md-10">
+            @Model.Address
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Total Amount</label>
+        <div class="col-md-10">
+            <span class="numeral-init">@Model.Amount</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Description</label>
+        <div class="col-md-10">
+            @Model.Description
+        </div>
+    </div>
+    <div class="">
+        <form action="@Url.RouteUrl(new { controller = "Order", action = "SetStatusOrder", area = "Admin" })" name="form-order-set" method="post">
+            <input type="hidden" name="idorder" value="@Model.Id" />
+            @if (Model.Status == 0 || Model.Status == 1)
+            {
+                <input type="hidden" name="status" value="2"/>
+                <input type="submit" value="Pay" class="btn btn-success btn-set-paid" />
+            }
+
+            else if (Model.Status == 2)
+            {
+                <input type="hidden" name="status" value="0" />
+                <input type="submit" value="Unset" class="btn btn-warning btn-set-notok" />
+            }
+
+        </form>
+    </div>
+</div>
+<hr />
+<h4>Order Details</h4>
+
+@*
+       <table class="table table-hover table-striped">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Unit Price</th>
+            <th>Discount</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+        </tr>
+        @foreach (var d in Model.OrderDetails)
+        {
+            <tr>
+                <td>@d.ProductId</td>
+                <td>@d.Product.Name</td>
+                <td>@Html.FormatValue(@d.UnitPrice, "{0:c}")</td>
+                <td>@d.Discount</td>
+                <td>@d.Quantity</td>
+                <td>@Html.FormatValue((d.UnitPrice * d.Quantity * (1 - d.Discount)), "{0:c}")</td>
+            </tr>
+        }
+        <tr>
+            <th colspan="5" style="text-align:right">Total:</th>
+            <th class="nn-cart-total">@Html.FormatValue((double)ViewBag.Total, "{0:c}")</th>
+        </tr>
+    </table>
+*@
+<form method="post" action="@Url.RouteUrl(new { controller = "Order", action = "UpdateOrder", area = "admin" })" enctype="multipart/form-data">
+ <input type="hidden" name="orderid" value="@Model.Id"/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="imaginary_container">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" data-urlsearch="@Url.RouteUrl(new { controller = "Products", action = "SearchProducts", area = "Admin" })" id="search-product" data-flagproduct="1" placeholder="Search">
+                    <ul class="typeahead dropdown-menu" id="menu-typesearch" style="top: 34px; left: 0px;display:none"></ul>
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-12" id="content-product-search" style="border-bottom:1px solid #cecbcb;">
+                <div class="row head-table-customize" style="margin-top:10px;margin-bottom:8px">
+                    <div class="col-sm-3 col-xs-3"><b>Name</b></div>
+                    <div class="col-sm-2 col-xs-2"><b>Price</b></div>
+                    <div class="col-sm-2 col-xs-2"><b>Discount (%)</b></div>
+                    <div class="col-sm-2 col-xs-2"><b>Quantity</b></div>
+                    <div class="col-sm-2 col-xs-2"><b style="float:right">Total</b></div>
+                    <div class="col-sm-1 col-xs-1"></div>
+                </div>
+                @foreach (var d in Model.OrderDetails)
+                {
+                    var discount = d.Product.Discount * 100;
+                    var t_ = d.UnitPrice * d.Quantity * (1 - d.Discount);
+
+                    {
+                        index++;
+
+                    }
+
+
+                    <div class="row ele-content" id="p-@index" data-idp_="@d.ProductId" style="margin-top:3px;margin-bottom:2px">
+
+                        <input type="hidden" name="Product[]" value="@d.ProductId">
+                        <div class="col-sm-3 col-xs-3">@d.Product.Name</div>
+                        <div class="col-sm-2 col-xs-2">
+                            <input type="hidden" id="pr_@d.ProductId" name="Product[@d.ProductId][price]" value="@d.Product.PriceP" />
+                            <span class="numeral-init">@d.Product.PriceP</span>
+                        </div>
+                        <div class="col-sm-2 col-xs-2">
+                            <input type="number" name="Product[@d.ProductId][discount]" id="d-p-@d.ProductId" data-idp="@d.ProductId" class="form-control input-customize discount-product" min="0" max="100" value="@discount.ToString().Replace(',', '.')" />
+
+                        </div>
+                        <div class="col-sm-2 col-xs-2"><input type="number" name="Product[@d.ProductId][quantity]" id="q-p-@d.ProductId" data-idp="@d.ProductId" class="form-control input-customize quantity-product cell-@d.ProductId" value="@d.Quantity" min="1" /></div>
+                        <div class="col-sm-2 col-xs-2"><span id="tt_@d.ProductId" class="total-cus numeral-init">@t_</span></div>
+                        <div class="col-sm-1 col-xs-1"><a href="javascript:void(0);" class="btn-delete-ele-product" data-item="@index"><i class="fa fa-trash-o"></i></a></div>
+
+                    </div>
+
+                }
+
+
+            </div>
+            <div class="row">
+                <input type="hidden" id="index-ele" value="@index" />
+                <div class="col-sm-12" id="show-total">
+                    <div class="col-sm-3 col-sm-offset-9">
+                        <input type="hidden" id="total-sum-input" name="total" value="@ViewBag.Total" />
+                        <span><b>Total :&nbsp;</b></span><span id="sum-total" class="numeral-init nn-cart-total" style="font-weight:bold;font-size:large">@ViewBag.Total</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-sm-3 col-sm-offset-9" style="margin-top:20px">
+                <input type="submit" class="btn btn-success" value="Change" />
+            </div>
+        </div>
+    </div>
+</form>
+
+@{@await Html.PartialAsync("_ModelPopup"); }
+
+@section scripts{
+   <script src="~/Scripts/TypeHeadAjax/bootstrap-typeahead.js"></script>
+<script src="~/Scripts/set_up_importstock.js"></script>
+<script src="~/Scripts/NumberJS/numeral.min.js"></script>
+
+
+}

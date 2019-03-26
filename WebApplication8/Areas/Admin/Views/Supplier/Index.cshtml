@@ -1,0 +1,487 @@
+﻿@using WebApplication8.Models.WebShop;
+@model Supplier
+
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#menu1">Suplier</a></li>
+    <li><a data-toggle="tab" href="#menu2">Customer</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="menu1" class="tab-pane fade in active">
+        <div class="row" style="margin-top:10px">
+            <!-- left column -->
+            <div class="col-md-4" id="supplier-left">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Supplier</h3>
+                    </div><!-- /.box-header -->
+                    <!-- form start -->
+
+
+                    <form role="form" action="" method="post" id="form-supplier">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="Id">Id</label>
+
+                                <input type="text" class="form-control" id="Id" placeholder="Id" name="Id" value="@Model.Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name" name="Name" value="@Model.Name">
+
+                                @*<textarea class="ckeditor" cols="20" id="Ckeditor1" name="Name" rows="2">@Model.Name</textarea>*@
+
+                            </div>
+                            <div class="form-group">
+                                <label for="logo">Logo</label>
+
+                                <input type="file" id="Logo" class="form-control" name="filelogo">
+                                <br />
+                                <div class="img-responsive"> <img id="img" src="@Model.Logo" class="img-responsive" style="width:100px" /></div>
+                                <br />
+                                <input type="hidden" id="logo-text" class="form-control" placeholder="Logo" name="Logo" value="@Model.Logo">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Name">Email</label>
+                                <input type="email" class="form-control" id="Email" placeholder="Email" name="Email" value="@Model.Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone">Phone</label>
+                                <input type="text" class="form-control" id="Phone" placeholder="Phone" name="Phone" value="@Model.Phone">
+                            </div>
+
+                        </div>
+
+                        <div class="box-footer">
+
+                            <button type="submit" onclick="form.action='@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Insert'" class="btn btn-primary box-button" id="validateBtn">
+                                Insert
+                                <i class="fa fa-check icon-white"></i>
+                            </button>
+
+                            <button type="submit" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Update'" class="btn btn-info box-button">
+                                Update
+                                <i class="fa fa-pencil icon-white"></i>
+                            </button>
+                            <button type="button" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Delete'" class="btn btn-danger box-button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item @Model.Id" data-message="Are you sure you want to delete item @Model.Id ?">
+                                Delete
+                                <i class="fa fa-trash icon-white">
+                                </i>
+                            </button>
+                            <button onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Index'" class="btn btn-default box-button">
+                                Reset
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- /.box -->
+            </div> <!--end col-->
+            <div class="col-md-8">
+                <div> <a href="@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Index" class="btn btn-success btn-lg" id="create-supplier"> Create New <i class="fa fa-plus icon-white"></i></a></div>
+                <br />
+
+                <form method="post" action="">
+                    <table class="table" id="domainTable">
+                        <thead>
+                            <tr>
+
+                                <th>
+                                    <input type="checkbox" id="check-all-header" />
+
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Name)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Logo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Email)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Phone)
+                                </th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (Supplier item in ViewBag.Suppliers)
+                            {
+
+
+                                <tr>
+                                    <td>
+
+                                        <input type="checkbox" name="ids" value="@item.Id" />
+
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+
+                                        <img src="@item.Logo" style="width:100px;" class="img-responsive" />
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Phone)
+                                    </td>
+                                    <td>
+                                        @*<a href="/Admin/Supplier/Edit/@item.Id" class="btn btn-warning btn-sm supplier-edit"><i class="fa fa-pencil icon-white"></i></a>*@
+                                        <button id="supplier-edit" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Edit/@item.Id'" class="btn btn-warning btn-sm"><i class="fa fa-pencil icon-white"></i></button>
+
+                                        @*<a data-target="#confirmDelete" class="btn delete-asset btn-danger btn-sm" data-toggle="modal"   data-message="Are you sure you wish to delete this supplier @item.Name?" data-title="Delete @item.Name"><i class="fa fa-trash icon-white"></i></a>*@
+
+                                        <button type="button" class="btn delete-asset btn-danger btn-sm" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Delete/@item.Id'" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item @item.Id" data-message="Are you sure you want to delete item @item.Id ?">
+                                            <i class="glyphicon glyphicon-trash"></i>
+                                        </button>
+
+
+                                    </td>
+                                </tr>
+                            }
+
+
+
+                        </tbody>
+
+                    </table>
+
+
+
+                    <button class="btn btn-lg btn-danger" type="button" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/DeleteSelected'" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item item" data-message="Are you sure you want to delete selected item ?">
+                        Delete Selected
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </button>
+
+                </form>
+
+            </div>
+        </div> <!--end row-->
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <div class="row" style="margin-top:10px">
+            <!-- left column -->
+            <div class="col-md-4" id="supplier-left">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Customer</h3>
+                    </div><!-- /.box-header -->
+                    <!-- form start -->
+
+                    <form role="form" action="" method="post" id="form-supplier">
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="Id">Id</label>
+
+                                <input type="text" class="form-control" id="Id" placeholder="Id" name="Id" value="@Model.Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name" name="Name" value="@Model.Name">
+
+                                @*<textarea class="ckeditor" cols="20" id="Ckeditor1" name="Name" rows="2">@Model.Name</textarea>*@
+
+                            </div>
+                            <div class="form-group">
+                                <label for="logo">Logo</label>
+
+                                <input type="file" id="Logo" class="form-control" name="filelogo">
+                                <br />
+                                <div class="img-responsive"> <img id="img" src="@Model.Logo" class="img-responsive" style="width:100px" /></div>
+                                <br />
+                                <input type="hidden" id="logo-text" class="form-control" placeholder="Logo" name="Logo" value="@Model.Logo">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Name">Email</label>
+                                <input type="email" class="form-control" id="Email" placeholder="Email" name="Email" value="@Model.Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone">Phone</label>
+                                <input type="text" class="form-control" id="Phone" placeholder="Phone" name="Phone" value="@Model.Phone">
+                            </div>
+
+                        </div>
+
+                        <div class="box-footer">
+
+                            <button type="submit" onclick="form.action='@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Insert'" class="btn btn-primary box-button" id="validateBtn">
+                                Insert
+                                <i class="fa fa-check icon-white"></i>
+                            </button>
+
+                            <button type="submit" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Update'" class="btn btn-info box-button">
+                                Update
+                                <i class="fa fa-pencil icon-white"></i>
+                            </button>
+                            <button type="button" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Delete'" class="btn btn-danger box-button" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item @Model.Id" data-message="Are you sure you want to delete item @Model.Id ?">
+                                Delete
+                                <i class="fa fa-trash icon-white">
+                                </i>
+                            </button>
+                            <button onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Index'" class="btn btn-default box-button">
+                                Reset
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- /.box -->
+            </div> <!--end col-->
+            <div class="col-md-8">
+                <div> <a href="@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Index" class="btn btn-success btn-lg" id="create-supplier"> Create New <i class="fa fa-plus icon-white"></i></a></div>
+                <br />
+
+                <form method="post" action="">
+                    <table class="table" id="domainTable1">
+                        <thead>
+                            <tr>
+
+                                <th>
+                                    <input type="checkbox" id="check-all-header" />
+
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Name)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Logo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Email)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Phone)
+                                </th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (Supplier item in ViewBag.Suppliers)
+                            {
+
+
+                                <tr>
+                                    <td>
+
+                                        <input type="checkbox" name="ids" value="@item.Id" />
+
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+
+                                        <img src="@item.Logo" style="width:100px;" class="img-responsive" />
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Phone)
+                                    </td>
+                                    <td>
+                                        @*<a href="/Admin/Supplier/Edit/@item.Id" class="btn btn-warning btn-sm supplier-edit"><i class="fa fa-pencil icon-white"></i></a>*@
+                                        <button id="supplier-edit" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Edit/@item.Id'" class="btn btn-warning btn-sm"><i class="fa fa-pencil icon-white"></i></button>
+
+                                        @*<a data-target="#confirmDelete" class="btn delete-asset btn-danger btn-sm" data-toggle="modal"   data-message="Are you sure you wish to delete this supplier @item.Name?" data-title="Delete @item.Name"><i class="fa fa-trash icon-white"></i></a>*@
+
+                                        <button type="button" class="btn delete-asset btn-danger btn-sm" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/Delete/@item.Id'" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item @item.Id" data-message="Are you sure you want to delete item @item.Id ?">
+                                            <i class="glyphicon glyphicon-trash"></i>
+                                        </button>
+
+
+                                    </td>
+                                </tr>
+                            }
+
+
+
+                        </tbody>
+
+                    </table>
+
+
+
+                    <button class="btn btn-lg btn-danger" type="button" onclick="form.action = '@Url.RouteUrl(new {controller="/", area = "" })Admin/Supplier/DeleteSelected'" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item item" data-message="Are you sure you want to delete selected item ?">
+                        Delete Selected
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </button>
+
+                </form>
+
+            </div>
+        </div> <!--end row-->
+    </div>
+</div>
+
+
+
+
+@{@await Html.PartialAsync("_ModelPopup"); }
+
+@section scripts{
+
+    <script src="~/Scripts/LoadDataTable.js"></script>
+    <script src="~/Scripts/ModelPopup.js"></script>
+
+    <script>
+        $('#deleteConfirmModal').modal('show');
+        function readImage(input) {
+            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+            if (regex.test($(input).val().toLowerCase())) {
+                if (input.files && input.files[0]) {
+                    var FR = new FileReader();
+                    FR.onload = function (e) {
+                        $('#img').attr("src", e.target.result);
+                        $('#logo-text').val(e.target.result);
+                    };
+                    FR.readAsDataURL(input.files[0]);
+                }
+
+            }
+            else {
+                alert("Please upload file valid");
+                $(input).val("");
+            }
+
+        }
+
+        $("#Logo").change(function () {
+            readImage(this);
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#check-all-header").click(function () {
+                var checkedStatus = this.checked;
+                $('#domainTable tbody tr').find('td:first :checkbox').each(function () {
+                    $(this).prop('checked', checkedStatus);
+                });
+
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+
+
+    </script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+            $('#form-supplier').bootstrapValidator({
+                // live: 'disabled',
+                excluded: [':disabled', ':hidden', ':not(:visible)'],
+                message: 'This value is not valid',
+                submitButtons: 'button[id="validateBtn"]',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh',
+
+                },
+                fields: {
+                    Id: {
+
+                        validators: {
+                            notEmpty: {
+                                message: 'The Id is required and cannot be empty'
+                            },
+
+                            remote: {
+                                type: 'GET',
+                                url: '/Validating/IsSupplierExists',
+                                data: { type: 'Id' },
+                                message: 'The Id is already in use'
+                            },
+
+
+                        }
+                    },
+                    Name: {
+
+                        validators: {
+                            notEmpty: {
+                                message: 'The Name is required and cannot be empty'
+                            },
+
+
+                        }
+                    },
+                    filelogo: {
+
+                        validators: {
+                            notEmpty: {
+                                message: 'File is required and cannot be empty'
+                            },
+
+
+                        }
+                    },
+
+                    Email: {
+
+                        validators: {
+                            notEmpty: {
+                                message: 'The Email is required and cannot be empty'
+                            },
+                            emailAddress: {
+                                message: 'The input is not a valid email address'
+                            },
+
+                        }
+                    },
+
+                    Phone: {
+
+                        validators: {
+                            notEmpty: {
+                                message: 'The Phone is required and cannot be empty'
+                            },
+
+
+                        }
+                    },
+
+                }
+            });
+
+            // Validate the form manually
+            //$('#validateBtn').click(function() {
+            //    $('#form-supplier').bootstrapValidator();
+            //});
+
+            //$('#resetBtn').click(function() {
+            //    $('#defaultForm').data('bootstrapValidator').resetForm(true);
+            //});
+        });
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+}

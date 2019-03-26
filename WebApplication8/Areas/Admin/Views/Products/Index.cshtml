@@ -1,0 +1,73 @@
+@model IEnumerable<WebApplication8.Models.WebShop.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<div> <a href="/Admin/Products/Insert" class="btn btn-success btn-lg" id="create-supplier"> Create New <i class="fa fa-plus icon-white"></i></a></div>
+@using (Html.BeginForm())
+{
+    <table class="table" id="domainTable">
+        <thead>
+            <tr>
+                <th>
+                    <input type="checkbox" id="check-all-header" />
+                </th>
+                <th>@Html.DisplayNameFor(m => m.Id)</th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Name)
+                </th>
+                <th>@Html.DisplayNameFor(m => m.PriceP)</th>
+                <th>@Html.DisplayNameFor(m => m.Image)</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><input type="checkbox" name="ids" value="@item.Id" /></td>
+                    <td>@Html.DisplayFor(m => item.Id)</td>
+                    <td>@Html.DisplayFor(m => item.Name)</td>
+                    <td>
+                        @Convert.ToDecimal(item.PriceP).ToString("#,##0.00")
+                </td>
+                <td><a href="~/Admin/Products/Detail/@item.Id"> <img src="~/Content/img/products/images/@item.Image" data-echo="/Content/img/products/images/@item.Image" class="img-responsive" style="height:60px; border:1px solid #ececec" /> </a></td>
+
+                <td>
+                    @*<a href="/Admin/Supplier/Edit/@item.Id" class="btn btn-warning btn-sm supplier-edit"><i class="fa fa-pencil icon-white"></i></a>*@
+                    <button id="supplier-edit" onclick="form.action = '@Url.RouteUrl(new {controller="/",area="" })Admin/Products/Edit/@item.Id'" class="btn btn-warning btn-sm"><i class="fa fa-pencil icon-white"></i></button>
+
+                    @*<a data-target="#confirmDelete" class="btn delete-asset btn-danger btn-sm" data-toggle="modal"   data-message="Are you sure you wish to delete this supplier @item.Name?" data-title="Delete @item.Name"><i class="fa fa-trash icon-white"></i></a>*@
+
+                    <button type="button" class="btn delete-asset btn-danger btn-sm" onclick="form.action = '@Url.RouteUrl(new {controller="/",area="" })Admin/Products/Delete/@item.Id'" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item @item.Id" data-message="Are you sure you want to delete item @item.Id ?">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </button>
+                    <button id="supplier-detail" onclick="form.action = '@Url.RouteUrl(new {controller="/",area="" })Admin/Products/Detail/@item.Id'" class="btn btn-info btn-sm"><i class="fa fa-info"></i></button>
+
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    <button class="btn btn-lg btn-danger" type="button" onclick="form.action = '/Admin/Products/DeleteSelected'" data-toggle="modal" data-target="#confirmDelete" data-title="Delete item item" data-message="Are you sure you want to delete selected item ?">
+        Delete Selected
+        <i class="glyphicon glyphicon-trash"></i>
+    </button>
+}
+@{@await Html.PartialAsync("_ModelPopup"); }
+
+@section scripts{
+    <script src="~/Scripts/LoadDataTable.js"></script>
+    <script src="~/Scripts/ModelPopup.js"></script>
+    <script src="~/Scripts/CheckAll.js"></script>
+
+}

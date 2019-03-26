@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-WebApplication8-C4721444-3399-49FD-A22A-14DB543103A7</UserSecretsId>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" PrivateAssets="All" />
+    <PackageReference Include="NETCore.MailKit" Version="2.0.2" />
+    <PackageReference Include="Sakura.AspNetCore.PagedList" Version="2.0.2" />
+    <PackageReference Include="Stripe.net" Version="16.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Content\img\categories\" />
+    <Folder Include="wwwroot\Content\img\files\" />
+    <Folder Include="wwwroot\Content\img\flash\" />
+    <Folder Include="wwwroot\Content\img\images\" />
+    <Folder Include="wwwroot\Content\img\photos\" />
+    <Folder Include="wwwroot\Content\img\productsflash\" />
+    <Folder Include="wwwroot\Content\img\products\files\" />
+    <Folder Include="wwwroot\Content\img\products\flash\" />
+    <Folder Include="wwwroot\Content\img\_thumbs\Images\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\aspnetcore\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\doctrine\inflector\lib\Doctrine\Common\Inflector\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\doctrine\inflector\tests\Doctrine\Tests\Common\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\symfony\finder\Tests\Fixtures\r+e.gex[c]a%28r%29s\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\symfony\http-foundation\Exception\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\symfony\http-foundation\Session\Storage\Handler\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\symfony\http-foundation\Session\Storage\Proxy\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\symfony\http-foundation\Tests\Session\Attribute\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\symfony\http-foundation\Tests\Session\Storage\" />
+    <Folder Include="wwwroot\Scripts\RichFilemanager\connectors\php\vendor\symfony\polyfill-php54\Resources\stubs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_CookieConsentPartial.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+  </ItemGroup>
+
+</Project>
