@@ -13229,11 +13229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CodeMua\\WebShop-MVC6-Core-2.1\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
+      "projectUniqueName": "C:\\Users\\letru\\Desktop\\DoAnGiuaKy\\WebApplication8\\WebApplication8.csproj",
       "projectName": "WebApplication8",
-      "projectPath": "D:\\CodeMua\\WebShop-MVC6-Core-2.1\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
+      "projectPath": "C:\\Users\\letru\\Desktop\\DoAnGiuaKy\\WebApplication8\\WebApplication8.csproj",
       "packagesPath": "C:\\Users\\letru\\.nuget\\packages\\",
-      "outputPath": "D:\\CodeMua\\WebShop-MVC6-Core-2.1\\WebApplication8\\WebApplication8\\obj\\",
+      "outputPath": "C:\\Users\\letru\\Desktop\\DoAnGiuaKy\\WebApplication8\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

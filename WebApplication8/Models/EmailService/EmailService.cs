@@ -20,8 +20,8 @@ namespace WebApplication8.Models.EmailService
         public EmailService(IHostingEnvironment hostingEnvironment, IHttpContextAccessor httpContextAccessor) {
             _hostingEnvironment = hostingEnvironment;
             _httpContextAccessor = httpContextAccessor;
-            FromAddress = "trunglu885@gmail.com";
-            Password = "01679162755";
+            FromAddress = "truc.lecong25121993@gmail.com";
+            Password = "Lecongtruc25121993@2019";
         }
         public  bool SendMailOrderNotifi(string id,string received_email) {
             try
