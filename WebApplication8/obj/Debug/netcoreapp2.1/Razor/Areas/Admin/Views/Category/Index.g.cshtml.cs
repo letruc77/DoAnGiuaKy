@@ -109,7 +109,7 @@ using WebApplication8.Models.WebShop;
             WriteLiteral("                    <div class=\"col-md-6\">\r\n                        ");
             EndContext();
             BeginContext(736, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8897eb76d6bc4b908e86bdc8773f23b1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a18c8e94b20a4a53b4c8df3b5633fe30", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

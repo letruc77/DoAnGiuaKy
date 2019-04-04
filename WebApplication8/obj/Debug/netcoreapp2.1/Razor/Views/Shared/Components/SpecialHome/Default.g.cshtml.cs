@@ -106,9 +106,9 @@ using WebApplication8.Models.IdentityModels;
             WriteLiteral("                <div class=\"products\" style=\"float:left\">\r\n\r\n                    <div class=\"product\">\r\n                        <div class=\"product-image\">\r\n                            <div class=\"image\">\r\n                                ");
             EndContext();
             BeginContext(641, 158, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a064133c7f46548d6f7463bb98a313", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea8e17940f08418e81bcfb80b70bf26c", async() => {
                 BeginContext(682, 113, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0c9b3a3412c941e19973d993e4ec5812", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a37bf701c19949f2954c75f50868cc22", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -180,7 +180,7 @@ AddHtmlAttributeValue("", 673, m.Name, 673, 7, false);
                                 ");
             EndContext();
             BeginContext(1215, 120, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e45ef55af2f4890956813403c99d7d6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d337d6b95d664e6db481818498bbd4ed", async() => {
                 BeginContext(1248, 40, true);
                 WriteLiteral("\r\n\r\n                                    ");
                 EndContext();

@@ -263,7 +263,7 @@ WriteAttributeValue("", 869, p.Id, 869, 5, false);
             WriteLiteral("</span></th>\r\n            <th></th>\r\n        </tr>\r\n    </table>\r\n    ");
             EndContext();
             BeginContext(1474, 542, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee5f6cd57c664a888ac42bcaa4a3ceb0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "450293853b684a38af27e4acf7756843", async() => {
                 BeginContext(1516, 153, true);
                 WriteLiteral("\r\n        <button class=\"btn btn-danger\">\r\n            \r\n            <i class=\"fa fa-trash\"></i>\r\n            Xoá giỏ hàng\r\n        </button>\r\n        <a");
                 EndContext();
@@ -278,7 +278,7 @@ WriteAttributeValue("", 1676, Url.RouteUrl(new {controller="Product",action="Pro
                 WriteLiteral(" class=\"btn btn-primary\">\r\n            <i class=\"fa fa-cart-plus\"></i>\r\n            Mua thêm\r\n        </a>\r\n        ");
                 EndContext();
                 BeginContext(1856, 138, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30652552cf6c47839db526aca5d48fe3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa29a1dc70dc46e58ac44760511693db", async() => {
                     BeginContext(1907, 83, true);
                     WriteLiteral("\r\n            <i class=\"fa fa-cart-arrow-down\"></i>\r\n            Checkout\r\n        ");
                     EndContext();

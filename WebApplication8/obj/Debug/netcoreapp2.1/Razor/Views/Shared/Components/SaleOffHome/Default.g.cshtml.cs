@@ -114,12 +114,12 @@ using WebApplication8.Models.IdentityModels;
                                             ");
             EndContext();
             BeginContext(995, 374, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ddfb1fd58146429a9120bd76a1b57b03", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76e18a19733148d688ad9271881bb92e", async() => {
                 BeginContext(1096, 50, true);
                 WriteLiteral("\r\n                                                ");
                 EndContext();
                 BeginContext(1146, 91, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f9a0509a8b1b4562829bc8530e77cea1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ff3a38ce0ead4f27b91e9f26ead1387b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -189,7 +189,7 @@ AddHtmlAttributeValue("", 1034, p.Image, 1034, 8, false);
                                         <h3 class=""name"">");
             EndContext();
             BeginContext(1927, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c1fe10097624c68b54ace63009d19d9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ba5b3ad8c5b4790aa4e0cd957ae1008", async() => {
                 BeginContext(1969, 6, false);
 #line 33 "C:\Users\letru\Desktop\DoAnGiuaKy\WebApplication8\Views\Shared\Components\SaleOffHome\Default.cshtml"
                                                                                              Write(p.Name);

@@ -465,7 +465,7 @@ WriteAttributeValue("", 6278, u.UserName, 6278, 11, false);
             WriteLiteral(" ?\"><i class=\"fa fa-trash\"></i> Delete User</button>\r\n\r\n                                ");
             EndContext();
             BeginContext(6532, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0fcbe44d5f874682a4b3f50076a70949", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b7305cb020f422f8bc7300c72cc3c6b", async() => {
                 BeginContext(6600, 14, true);
                 WriteLiteral("Reset Password");
                 EndContext();
@@ -529,7 +529,7 @@ Write(await Html.PartialAsync("_ModelPopup"));
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(6870, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bfc6162f44e5439ba888ff4389ba0fcd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed466c336ae042dab74562e88e8b93a8", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -547,7 +547,7 @@ Write(await Html.PartialAsync("_ModelPopup"));
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(6926, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9af7018031249559fad4b752684c059", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24f12057a347434db2071175ca019e1b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

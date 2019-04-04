@@ -139,9 +139,9 @@ using WebApplication8.Models.IdentityModels;
             WriteLiteral("        <div class=\"col-sm-3 col-xs-6\" style=\"float:left;height:270px\">\r\n\r\n            <div class=\"product\">\r\n                <div class=\"product-image\">\r\n                    <div class=\"image\">\r\n                        ");
             EndContext();
             BeginContext(987, 159, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd2027d97bbf4f469de3cc17f910168c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9689b61e22d4e1596fb4c733ad6f893", async() => {
                 BeginContext(1028, 114, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e737a15770e64785890df0be79ef20c9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dd0ade0ec8ed4f3abf2169744da54ccd", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -258,7 +258,7 @@ AddHtmlAttributeValue("", 1019, m.Name, 1019, 7, false);
             WriteLiteral("                </div><!-- /.product-image -->\r\n\r\n\r\n                <div class=\"product-info text-left\">\r\n                    <h3 class=\"name\">\r\n                        ");
             EndContext();
             BeginContext(1923, 873, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c45110ccd63f42518b2126ff262ed2a7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e9f2d98231e49289c42d2e0b28a8b91", async() => {
                 BeginContext(1956, 2, true);
                 WriteLiteral("\r\n");
                 EndContext();

@@ -75,7 +75,7 @@ using WebApplication8.Models.UtilEntities;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(70, 1297, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "214d0743e012451b8d00feff98d31862", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e44b228c6e204fddbeffbfd2cb23eb21", async() => {
                 BeginContext(76, 119, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>");
                 EndContext();
@@ -157,7 +157,7 @@ Write(Html.Raw(MybundleRegister.AddScript(MybundleRegister.JTableCSS, Url.RouteU
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1369, 1685, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff6cba54d004426ea8ea01d925d98a48", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01b8cac776a54b56a60154e95e31ccb9", async() => {
                 BeginContext(1406, 31, true);
                 WriteLiteral("\r\n    <div class=\"wrapper\">\r\n\r\n");
                 EndContext();

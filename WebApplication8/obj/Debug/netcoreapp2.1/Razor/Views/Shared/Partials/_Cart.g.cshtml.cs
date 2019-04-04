@@ -209,7 +209,7 @@ WriteAttributeValue("", 865, p.Id, 865, 5, false);
             WriteLiteral("</td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(989, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b125965a16c84dd2954398f6745f032c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb5dc59afddc4114b84aa8be1629af71", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -254,12 +254,12 @@ WriteAttributeValue("", 865, p.Id, 865, 5, false);
             WriteLiteral("</th>\r\n            <th></th>\r\n        </tr>\r\n    </table>\r\n    ");
             EndContext();
             BeginContext(1328, 526, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00321459eb0748f4b2c802a03cef74c4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d83fe8c243ed45849d2e8d0808141b27", async() => {
                 BeginContext(1370, 158, true);
                 WriteLiteral("\r\n        <button class=\"btn btn-default\">\r\n            <span class=\"glyphicon glyphicon-th-list\"></span>\r\n            Clear Cart\r\n        </button>\r\n        ");
                 EndContext();
                 BeginContext(1528, 153, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "523c5f1ee6e446a6a46e47377f8c87e6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80a0ab7d8ccc4066bd9d529925f2daed", async() => {
                     BeginContext(1577, 100, true);
                     WriteLiteral("\r\n            <span class=\"glyphicon glyphicon-th-list\"></span>\r\n            Shopping More\r\n        ");
                     EndContext();
@@ -281,7 +281,7 @@ WriteAttributeValue("", 865, p.Id, 865, 5, false);
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(1691, 150, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b9269a5207447b9865092f8452c0912", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28b48b6d6e5d4cf0b7bf0bdca01d4c6b", async() => {
                     BeginContext(1742, 95, true);
                     WriteLiteral("\r\n            <span class=\"glyphicon glyphicon-th-list\"></span>\r\n            Checkout\r\n        ");
                     EndContext();

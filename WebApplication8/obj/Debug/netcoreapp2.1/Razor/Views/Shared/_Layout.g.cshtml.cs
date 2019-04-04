@@ -95,7 +95,7 @@ using WebApplication8.Models.UtilEntities;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(70, 2107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "314320260c3e48ab9a58a17d724768a4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4834a0967a354a6cb91443f287c2a1fd", async() => {
                 BeginContext(76, 119, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>");
                 EndContext();
@@ -149,7 +149,7 @@ Write(Html.Raw(MybundleRegister.AddScript(MybundleRegister.BoostrapValidatorCSS,
                 WriteLiteral("    ");
                 EndContext();
                 BeginContext(1221, 86, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1d291fa203cf40dfac3ac1d32f63b7c9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "552b339bec574d11a6ae3e0b21c98ec5", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -199,7 +199,7 @@ Write(Html.Raw(MybundleRegister.AddScript(MybundleRegister.BoostrapValidatorCSS,
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(2181, 2292, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cdaf3f85cebc46d78cff3a50db9991e0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78f172b19150487b8a9824de96c51a95", async() => {
                 BeginContext(2204, 2, true);
                 WriteLiteral("\r\n");
                 EndContext();
@@ -329,7 +329,7 @@ WriteAttributeValue("", 3696, Url.RouteUrl(new {controller="/" }), 3696, 36, fal
                 WriteLiteral(" />\r\n    ");
                 EndContext();
                 BeginContext(3742, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "46fbe4b48cc0428ba573efa121b03e9a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0df62d9a74264479ba631953d8bb36cb", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -347,7 +347,7 @@ WriteAttributeValue("", 3696, Url.RouteUrl(new {controller="/" }), 3696, 36, fal
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(3796, 67, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1c2ddca37e04278a1ed4d161499d38a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f167aef1d8f54ccd9ceddcef1b7b25de", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

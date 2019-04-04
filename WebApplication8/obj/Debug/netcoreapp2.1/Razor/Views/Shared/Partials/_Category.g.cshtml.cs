@@ -122,7 +122,7 @@ using WebApplication8.Models.WebShop;
             WriteLiteral("                    ");
             EndContext();
             BeginContext(1088, 89, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8029ed4e34604554aed642e9b7e58b45", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f42ddd81300641b68405b2db82422643", async() => {
                 BeginContext(1132, 2, true);
                 WriteLiteral("<i");
                 EndContext();
@@ -183,7 +183,7 @@ AddHtmlAttributeValue("", 1120, item.Name, 1120, 10, false);
             WriteLiteral("                    ");
             EndContext();
             BeginContext(1259, 93, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0af051fd02004d43819e822f0bfe5b0e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b13f7d4922a40ebb3be4e0c07ec183e", async() => {
                 BeginContext(1305, 2, true);
                 WriteLiteral("<i");
                 EndContext();

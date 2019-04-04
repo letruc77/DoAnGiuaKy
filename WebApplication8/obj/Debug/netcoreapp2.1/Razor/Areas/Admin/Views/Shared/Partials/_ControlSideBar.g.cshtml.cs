@@ -179,7 +179,7 @@ using Microsoft.AspNetCore.Identity;
             ");
             EndContext();
             BeginContext(5067, 2419, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fdd712fdbc3d4bb586d457020a72f927", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "977ca526c57f44648b75695a62626f10", async() => {
                 BeginContext(5087, 2392, true);
                 WriteLiteral(@"
                 <h3 class=""control-sidebar-heading"">General Settings</h3>

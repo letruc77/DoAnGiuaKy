@@ -194,7 +194,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n        </div>\r\n    </div>\r\n    <div class=\"\">\r\n        ");
             EndContext();
             BeginContext(2237, 700, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5416d01074894c80bac9ce62ce3d50d7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79ae40b3da75468ebc681cf69e488df1", async() => {
                 BeginContext(2375, 49, true);
                 WriteLiteral("\r\n            <input type=\"hidden\" name=\"idorder\"");
                 EndContext();
@@ -264,7 +264,7 @@ AddHtmlAttributeValue("", 2251, Url.RouteUrl(new { controller = "Order", action 
             WriteLiteral("\r\n    </div>\r\n</div>\r\n<hr />\r\n<h4>Order Details</h4>\r\n\r\n");
             EndContext();
             BeginContext(3896, 4374, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9b86c624bf74f388813f53bb8d35b17", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81cc9c15c0cf437f9a83d19d99b9cb64", async() => {
                 BeginContext(4039, 38, true);
                 WriteLiteral("\r\n <input type=\"hidden\" name=\"orderid\"");
                 EndContext();
@@ -617,7 +617,7 @@ Write(await Html.PartialAsync("_ModelPopup"));
                 WriteLiteral("\r\n   ");
                 EndContext();
                 BeginContext(8344, 69, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c207650a96054455a448bf19202797b2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7274ffeda64846bcac350036256b770d", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -635,7 +635,7 @@ Write(await Html.PartialAsync("_ModelPopup"));
                 WriteLiteral("\r\n");
                 EndContext();
                 BeginContext(8415, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b41f4c9f59444bba8355718d57d7d72", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d9c639b649c4ed28949912929031b3e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -653,7 +653,7 @@ Write(await Html.PartialAsync("_ModelPopup"));
                 WriteLiteral("\r\n");
                 EndContext();
                 BeginContext(8472, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2fa0045c160e4854b30aac940c3a9f19", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06f8ab686ad9405f87b5ae0678d15a00", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -102,12 +102,12 @@ using WebApplication8.Areas.Admin.Models;
             WriteLiteral("        ");
             EndContext();
             BeginContext(246, 1055, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "412cfd0b6c5f43f58ae737318bf062fb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ccc3f335aae04284ac11d8cf0e0011d7", async() => {
                 BeginContext(324, 123, true);
                 WriteLiteral("\r\n\r\n            <div class=\"form-group\">\r\n                <select name=\"status\" class=\"form-control\">\r\n                    ");
                 EndContext();
                 BeginContext(447, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "105e7bf1d8504907926d4e78ab8976d1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55c2b662597e4b01b59e8375c170b707", async() => {
                     BeginContext(465, 21, true);
                     WriteLiteral("Đơn hàng chờ xác nhận");
                     EndContext();
@@ -129,7 +129,7 @@ using WebApplication8.Areas.Admin.Models;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(517, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec5b4078f0d14b2e9d12dca86d64d6d3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b8d20b27e4445f88987b8fc5df996dd", async() => {
                     BeginContext(536, 15, true);
                     WriteLiteral("Đơn hàng đã xóa");
                     EndContext();
@@ -151,7 +151,7 @@ using WebApplication8.Areas.Admin.Models;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(582, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32733b84668e4b28861a314e8e92172d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d09217c0ae140b7aa3f290bfe1fe16e", async() => {
                     BeginContext(600, 17, true);
                     WriteLiteral("Đơn hàng đã duyệt");
                     EndContext();
@@ -173,7 +173,7 @@ using WebApplication8.Areas.Admin.Models;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(648, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f474deca029a43fda35367c193de7b0c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0eae5d924c7d4f70a82f560ebe0c1c75", async() => {
                     BeginContext(666, 22, true);
                     WriteLiteral("Đơn hàng đã thanh toán");
                     EndContext();

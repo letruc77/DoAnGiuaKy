@@ -163,9 +163,9 @@ using WebApplication8.Models.WebShop;
                                 ");
             EndContext();
             BeginContext(1174, 147, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21ab38084b5240b0973b0d753cb184cc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75278bd9c6ae4ff8a5ac690fd4ac7830", async() => {
                 BeginContext(1225, 92, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9630136838b34831a23a302dd9b73d0f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "709b1f49d4504ea69ac651072837f726", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -281,7 +281,7 @@ AddHtmlAttributeValue("", 1206, m.Name.ToAscii(), 1206, 17, false);
             WriteLiteral("\r\n                           \r\n                        </div><!-- /.product-image -->\r\n\r\n                        \r\n                        <div class=\"product-info text-left\">\r\n                            <h3 class=\"name\">");
             EndContext();
             BeginContext(2327, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a5c6848a7b14cfaa606a6354f92c537", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "890c3c59a7d242d8b1aa626ea024e022", async() => {
                 BeginContext(2379, 6, false);
 #line 62 "C:\Users\letru\Desktop\DoAnGiuaKy\WebApplication8\Views\Product\Cat.cshtml"
                                                                                            Write(m.Name);

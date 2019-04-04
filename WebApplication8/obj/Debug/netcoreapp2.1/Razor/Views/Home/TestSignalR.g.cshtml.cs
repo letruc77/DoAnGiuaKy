@@ -95,7 +95,7 @@ using WebApplication8.Models.IdentityModels;
             WriteLiteral("\r\n<h1>Chat</h1>\r\n\r\n");
             EndContext();
             BeginContext(68, 186, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a61d05efab146a2bff066c6754b2614", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "305fa704a6304ba68c939b3537104462", async() => {
                 BeginContext(100, 147, true);
                 WriteLiteral("\r\n    Send a message:\r\n    <input type=\"text\" id=\"message-textbox\" disabled />\r\n    <button id=\"send-button\" type=\"submit\" disabled>Send</button>\r\n");
                 EndContext();
@@ -123,7 +123,7 @@ using WebApplication8.Models.IdentityModels;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(312, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ccd896712e0144c2af26c900c5ca1405", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7862d8d6e28459195fcacfa17bad177", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -95,7 +95,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n<header class=\"main-header\">\r\n    <!-- Logo -->\r\n    ");
             EndContext();
             BeginContext(182, 309, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65f8e5c80b3f47c88825dc980fa04b52", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "96281218aa9846d980382f416f656786", async() => {
                 BeginContext(220, 267, true);
                 WriteLiteral(@"
         <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -148,7 +148,7 @@ using Microsoft.AspNetCore.Identity;
                             ");
             EndContext();
             BeginContext(1302, 172, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c47b5ab78dde4402ad782eb168ccc0f0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c37425f0f79422e9a8fa8445f56e847", async() => {
                 BeginContext(1335, 135, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-barcode\"></i>\r\n                                Supplier\r\n                            ");
                 EndContext();
@@ -169,7 +169,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(1565, 169, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc1cd053cd674715916598be4990deee", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "144e5e6e5435445e85c3664d2e6adbda", async() => {
                 BeginContext(1590, 140, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-user-plus\"></i>\r\n                                Create user\r\n                            ");
                 EndContext();
@@ -190,7 +190,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(1825, 137, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6b0a8a2b65649b2b04159199c20f48d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4dab2f894d2f4454b0e07a7573a36784", async() => {
                 BeginContext(1852, 106, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-credit-card\"></i> Category\r\n                            ");
                 EndContext();
@@ -211,7 +211,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(2053, 176, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7b261fc46cf4834af103b8f9650b5d3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0245e25ebeec48d7ad709a980faedc04", async() => {
                 BeginContext(2086, 139, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-flag\"></i>\r\n                                Create products\r\n                            ");
                 EndContext();
@@ -254,7 +254,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("</span>\r\n                        <b class=\"caret\"></b>\r\n                    </a>\r\n                    <ul class=\"dropdown-menu\">\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(2810, 165, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4adf1b6f6195497797073f755f0671dc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c5d8fa1828c42129efe2c345a7c91dc", async() => {
                 BeginContext(2837, 134, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-sign-out\"></i>\r\n                                Logout\r\n                            ");
                 EndContext();
@@ -290,7 +290,7 @@ using Microsoft.AspNetCore.Identity;
                             ");
             EndContext();
             BeginContext(3447, 139, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47a23c54696948999ec4bdd741a51504", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d75c06f6cf92494ea561c743655d9c42", async() => {
                 BeginContext(3475, 107, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-credit-card\"></i> Suppliers\r\n                            ");
                 EndContext();
@@ -311,7 +311,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(3677, 133, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d739b52b3e34c22acf345f120019de8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce31ceafcd3d4ff68417741194ff6a07", async() => {
                 BeginContext(3703, 103, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-user\"></i> Manage Users\r\n                            ");
                 EndContext();
@@ -332,7 +332,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(3901, 136, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a7f89b8d9a74729930875c9500cc75f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7dc420ce3cb14829b964f73753cfaa02", async() => {
                 BeginContext(3929, 104, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-key\"></i> Action Filters\r\n                            ");
                 EndContext();
@@ -353,7 +353,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(4128, 137, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cb06db8cf8244299b8d63f38fdde16a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44c1aa2544534dbf89d39f0121c9e50f", async() => {
                 BeginContext(4155, 106, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-credit-card\"></i> Category\r\n                            ");
                 EndContext();
@@ -374,7 +374,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(4356, 136, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb34eee45c0848768c8ad99776890d37", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f724e69c95a47569bdef0fcd54f1333", async() => {
                 BeginContext(4383, 105, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-credit-card\"></i> Product\r\n                            ");
                 EndContext();
@@ -395,7 +395,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(4583, 132, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28147f193818404d942bc09f43e244ff", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16a42e996b4c4c9ab67ccf9eea7b678f", async() => {
                 BeginContext(4607, 104, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-credit-card\"></i> Orders\r\n                            ");
                 EndContext();
@@ -416,7 +416,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n                        <li class=\"divider\"></li>\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(4857, 135, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "88cba3b160954eaaaa7f55bcc0248437", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e830bc8a2ab4e6f8bf398540758b2f4", async() => {
                 BeginContext(4887, 101, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-lock\"></i> Permission\r\n                            ");
                 EndContext();
@@ -437,7 +437,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                        </li>\r\n\r\n\r\n\r\n                        <li>\r\n                            ");
             EndContext();
             BeginContext(5089, 135, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43636055e2d74a1a9e4d94766af331a8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99c2013e30e043eab6a4c6c776189539", async() => {
                 BeginContext(5122, 98, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-cog\"></i> Settings\r\n                            ");
                 EndContext();

@@ -124,7 +124,7 @@ WriteAttributeValue("", 273, p.Id, 273, 5, false);
             WriteLiteral(">\r\n             <div class=\"col-xs-4\">\r\n                 <div class=\"image\">\r\n                     <a href=\"indexbd17.html?page=detail#\">");
             EndContext();
             BeginContext(419, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "087aeabac25943d7b175e122af41f994", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5e326d350a894939922da8c8e73b237d", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

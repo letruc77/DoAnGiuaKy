@@ -101,7 +101,7 @@ using WebApplication8.Models.WebShop;
                     ");
             EndContext();
             BeginContext(772, 3619, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a07b73c9683493382c3610b1e815181", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9dab9b52682c4a9b9192fe0c43613261", async() => {
                 BeginContext(833, 272, true);
                 WriteLiteral(@"
                         <div class=""box-body"">
@@ -306,7 +306,7 @@ WriteAttributeValue("", 4533, Url.RouteUrl(new {controller="/", area = "" }), 45
             WriteLiteral(" class=\"btn btn-success btn-lg\" id=\"create-supplier\"> Create New <i class=\"fa fa-plus icon-white\"></i></a></div>\r\n                <br />\r\n\r\n                ");
             EndContext();
             BeginContext(4757, 4066, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf97701a945743de9e6b283e7a2d79aa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "858d87d4ce394f90bbbae9eea0a22a21", async() => {
                 BeginContext(4787, 369, true);
                 WriteLiteral(@"
                     <table class=""table"" id=""domainTable"">
@@ -551,7 +551,7 @@ WriteAttributeValue("", 8436, Url.RouteUrl(new {controller="/", area = "" }), 84
                     ");
             EndContext();
             BeginContext(9388, 3619, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2169dfce56d84ecf91f1d173f80d43ab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cac3113e9c8d4b82b55ff2bb2f38768f", async() => {
                 BeginContext(9449, 272, true);
                 WriteLiteral(@"
                         <div class=""box-body"">
@@ -756,7 +756,7 @@ WriteAttributeValue("", 13149, Url.RouteUrl(new {controller="/", area = "" }), 1
             WriteLiteral(" class=\"btn btn-success btn-lg\" id=\"create-supplier\"> Create New <i class=\"fa fa-plus icon-white\"></i></a></div>\r\n                <br />\r\n\r\n                ");
             EndContext();
             BeginContext(13373, 4067, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32c7c39b4a17439e9de57d5619d8a436", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0726cc1817a4c6a8533d59d2938dc6d", async() => {
                 BeginContext(13403, 370, true);
                 WriteLiteral(@"
                     <table class=""table"" id=""domainTable1"">
@@ -1004,7 +1004,7 @@ Write(await Html.PartialAsync("_ModelPopup"));
                 WriteLiteral("\r\n\r\n    ");
                 EndContext();
                 BeginContext(17596, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "49278cefa98745818b7c9c69dd6f914c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f957043035bd4ea2bbf9f128aa9d0cfd", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1022,7 +1022,7 @@ Write(await Html.PartialAsync("_ModelPopup"));
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(17652, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "447386e948bd4e119fd8433ab90da183", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43aac137ac1f4852a751015332612b51", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
